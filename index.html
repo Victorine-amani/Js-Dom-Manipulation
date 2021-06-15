@@ -1,0 +1,57 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body onload="displayName()">
+    <h1 class="title">FLIX</h1>
+    <h3>Creators and authors</h3>
+    <ul class="names">
+        <li>Victorine Amani</li>
+        <li>Eunice Atieno</li>
+        <li>Rebecca Anyangu</li>
+        <li>Sarah Sindeti</li>
+        <li>Sarah Papai</li>
+        <li>Sharon Oito</li>
+        <li>Celine Gushima</li>
+        <li>Catherine Gichina</li>
+    </ul>
+    <h3>Animations</h3>
+    <p>Animations are usually considered for children but <b>Did you know?</b> that animations can be therapeutic<br> On a tired day if you could switch on your tv and just have some mindless television for a few minutes helps your mind relax<br>Sor for
+        those who think that you are too old for this, try it out and come thank me later</p>
+    <video id="net" width=" fit-content " height="500 " controls autoplay>
+        <source src="spongebob.mp4" type="video/mp4 ">
+    </video>
+
+
+    <script>
+        document.body.setAttribute('style', 'background-color:rgb(244,187,151)')
+
+
+        function displayName() {
+            var heading = document.getElementsByClassName("title")
+            var title = heading.getAttribute("class")
+            console.log(title)
+
+
+            var groupies = document.getElementsByClassName("names");
+            var check = groupies[0].hasAttribute("class")
+            console.log(check)
+
+
+            var sblng = document.getElementById("net").previousSibling;
+            console.log(sblng);
+
+            var chldrn = document.getElementsByClassName("names");
+            var chldnames = chldrn[0].chldrn
+            console.log(chldnames);
+
+
+        }
+    </script>
+
+</body>
+
+</html>
