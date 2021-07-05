@@ -7,14 +7,17 @@
 
 <body onload="displayName()">
     <h1 class="title">FLIX</h1>
-    <h3>Creators and authors</h3>
+    <p id="p1"></p>
+    <h1 style="text-align: left;">Creators and authors</h1>
     <ul class="names">
+        <p id="p"></p>
         <li>Victorine Amani</li>
         <li>Eunice Atieno</li>
         <li>Rebecca Anyangu</li>
         <li>Sarah Sindeti</li>
         <li>Sarah Papai</li>
         <li>Sharon Oito</li>
+        <li>Celine Gushima</li>
         <li>Catherine Gichina</li>
     </ul>
     <h3>Animations</h3>
@@ -28,27 +31,27 @@
     <script>
         document.body.setAttribute('style', 'background-color:rgb(244,187,151)')
 
-
         function displayName() {
-//             var heading = document.getElementsByClassName("title")
-//             var title = heading.getAttribute("class")
-//             console.log(title)
+            var heading = document.getElementsByClassName("title")[0].getAttribute("class")
+            document.getElementById("p1").innerHTML = heading;
 
-          var groupies = document.getElementsByClassName("names");
+            var groupies = document.getElementsByClassName("names");
             var check = groupies[0].hasAttribute("class")
             document.getElementById("p").innerHTML = check;
-
 
             var sblng = document.getElementById("net").previousSibling;
             console.log(sblng);
 
-             var h1 = document.body.firstChild;
+            var h1 = document.body.firstChild;
             console.log(h1.nodeName);
 
 
         }
     </script>
 
+</body>
+
+</html>
 </body>
 
 </html>
